@@ -3,15 +3,13 @@ terraform {
 
   required_providers {
     aws = {
-      # Intentionally using the full Terraform hostname to trigger the bug on 1.10.5
+      # 👇 deliberately use the full Terraform registry hostname
       source  = "registry.terraform.io/hashicorp/aws"
       version = "~> 5.60"
     }
   }
 }
 
-# Minimal provider config. No resources or data sources,
-# so you don't need AWS credentials for the plan to run.
 provider "aws" {
   region = "eu-west-1"
 }
