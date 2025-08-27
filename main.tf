@@ -10,7 +10,7 @@ resource "spacelift_context" "prod-k8s-ie" {
 }
 
 resource "spacelift_context_attachment" "attachment" {
-  context_id = "production-cluster-ireland"
+  context_id = spacelift_context.prod-k8s-ie.id
   stack_id = spacelift_stack.app.id
   priority = 0
 }
