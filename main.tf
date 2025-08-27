@@ -1,5 +1,5 @@
 resource "spacelift_stack" "app" {
   name = "app-prod"
-  repository = "app-infra"
+  repository = "testing-one"
   branch = "main"
 }
