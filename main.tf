@@ -3,7 +3,7 @@ provider "spacelift" {}
 variable "idp_group_mapping_id" {}
 variable "role_id" {}
 variable "target_space_id" {
-  default = "QA-SPACE-ID" # replace with real QA space ID
+  default = "QA-SPACE-ID" 
 }
 
 resource "spacelift_role_attachment" "repro" {
