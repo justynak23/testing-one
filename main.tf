@@ -13,3 +13,4 @@ resource "spacelift_context_attachment" "attachment" {
   stack_id = spacelift_stack.app.id
   priority = 0
 }
+# test
