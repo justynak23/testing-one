@@ -12,6 +12,6 @@ resource "spacelift_context" "prod-k8s-ie" {
 resource "spacelift_context_attachment" "attachment" {
   context_id = spacelift_context.prod-k8s-ie.id
   stack_id = spacelift_stack.app.id
-  priority = 005
+  priority = 0
 }
 # test change to trigger run
