@@ -13,3 +13,9 @@ resource "spacelift_context_attachment" "attachment" {
   stack_id = spacelift_stack.app.id
   priority = 0
 }
+resource "spacelift_stack" "app" {
+  name       = "app-prod"
+  repository = "testing-one"
+  branch     = "main"
+  labels     = ["production"]
+}
