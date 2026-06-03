@@ -1,7 +1,7 @@
 resource "spacelift_stack" "app" {
   name       = "app-prod"
   repository = "testing-one"
-  branch     = "main"
+  branch     = "feature/test-branch"
   labels     = ["production"]
 }
 
